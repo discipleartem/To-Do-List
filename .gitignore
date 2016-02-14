@@ -15,3 +15,20 @@
 /log/*
 !/log/.keep
 /tmp
+
+
+###Дополнительные настройки:
+
+# Игнорирование прочих ненужных файлов.
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+
+#.idea это RubyMine файл
+.idea
+
+#самый важный игнор
+.secret

@@ -12,6 +12,8 @@ Building CheckList by https://youtu.be/Z9GaNNztcZk?list=PL8XO9gnqAQfwLJJRqaq69RZ
 
 * Deployment from http://railstutorial.ru/chapters/4_0/a-demo-app#top
 
+- when edit Gemfile - do bundle
+
 - do ->   rake assets:precompile    for working styles
           git add .
           git commit -am 'deploy heroku'

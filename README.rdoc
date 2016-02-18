@@ -6,9 +6,9 @@ Building CheckList by https://youtu.be/Z9GaNNztcZk?list=PL8XO9gnqAQfwLJJRqaq69RZ
 
 * Rails version 4.2.4
 
-* Ubuntu 14.04
+* server- any unix os
 
-* Database postgres
+* Database postgres (req. heroku)
 
 * Deployment from http://railstutorial.ru/chapters/4_0/a-demo-app#top
 

@@ -19,9 +19,11 @@ Building CheckList by https://youtu.be/Z9GaNNztcZk?list=PL8XO9gnqAQfwLJJRqaq69RZ
           git commit -am 'deploy heroku'
 
 - git push heroku master
-- heroku run rake db:migrate --app
+      (или привязать локальный репозиторий как удаленный:
+                      heroku git:remote -a имя_имя_субдомена_сайта(mysite))
+- heroku run rake db:migrate --app desolate-sierra-10483
 
 
-App at production -
+App at production - https://desolate-sierra-10483.herokuapp.com
 
 53:06

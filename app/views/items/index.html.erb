@@ -6,7 +6,7 @@
 
       <div class="row item">
 
-        <div class="col-md-8">
+        <div class="col-md-6">
 
           <h2 style="opacity: 0.5;" class="item-title"><strike><%= link_to item.title, item %></strike></h2>
           <p style="opacity: 0.5;" class="item-desc item-sub-title"><%= item.description %></p>
@@ -25,13 +25,20 @@
             <i class="fa fa-lg fa-trash"></i>
           <% end %>
         </div>
+
+
+        <div class="col-md-2">
+          <p><%= link_to uncomplete_item_path(item), method: :patch do %></p>
+            <i class="fa fa-lg fa-check-square"></i>
+          <% end %>
+        </div>
       </div>
 
 
     <% else %>
 
       <div class="row item">
-        <div class="col-md-8">
+        <div class="col-md-6">
           <h2 class="item-title"><%= link_to item.title, item %></h2>
           <p class="item-desc item-sub-title"><%= item.description %></p>
           <p class="time-ago item-sub-title">Created <%= time_ago_in_words(item.created_at) %> ago</p>
@@ -48,6 +55,12 @@
             <i class="fa fa-lg fa-trash"></i>
           <% end %>
         </div>
+
+<!--         <div class="col-md-2">
+          <p><%= link_to item, method: :patch do %> </p>
+            <i class="fa fa-lg fa-check-square"></i>
+          <% end %>
+        </div> -->
 
       </div>
 
